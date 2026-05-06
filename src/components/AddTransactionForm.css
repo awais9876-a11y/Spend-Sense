@@ -1,0 +1,110 @@
+.add-transaction-section {
+  padding: 24px;
+}
+
+.new-transaction-title {
+  color: #101828;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.plus-icon {
+  color: #718096;
+  margin-right: 4px;
+}
+
+.new-transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.toggle-container {
+  display: flex;
+  background-color: #f1f3f5;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.toggle-btn {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  color: #718096;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.toggle-btn.active {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.toggle-btn.expense-active {
+  color: #ef4444;
+}
+.toggle-btn.income-active {
+  color: #374151;
+}
+
+.form-input {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.text-input::placeholder {
+  color: #a0aec0;
+}
+.amount-input::placeholder {
+  color: #a0aec0;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.amount-input {
+  flex: 1;
+}
+
+.category-select {
+  flex: 1;
+  background-color: white;
+  color: #333;
+  appearance: none;
+  /* background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23101828%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.3c0%204.8%201.8%209.1%205.4%2012.7l132%20132c3.6%203.6%207.9%205.4%2012.7%205.4s9.1-1.8%2012.7-5.4l132-132c3.6-3.6%205.4-7.9%205.4-12.7s-1.8-9.1-5.4-12.7z%22%2F%3E%3C%2Fsvg%22"); */
+  background-repeat: no-repeat, repeat;
+  background-position:
+    right 12px top 50%,
+    0 0;
+  background-size:
+    0.7em auto,
+    100%;
+}
+
+.add-btn {
+  background-color: #101828;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 4px;
+}
+
+.add-btn:hover {
+  background-color: #1f293a;
+}

@@ -1,0 +1,85 @@
+.transaction-history-section {
+  padding: 0 24px 24px 24px;
+}
+
+.history-title {
+  color: #101828;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.transactions-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative; /* for absolute scroll placeholder */
+  /* If you want the container to scroll: 
+     max-height: 250px; 
+     overflow-y: auto; */
+}
+
+.transaction-item {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.category-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.details .description {
+  color: #101828;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1px;
+}
+
+.details .category {
+  color: #718096;
+  font-size: 0.8rem;
+}
+
+.item-amount {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.item-amount.income {
+  color: #10b981;
+} /* Green */
+.item-amount.expense {
+  color: #101828;
+}
+.scroll-indicator {
+  position: absolute;
+  top: 0;
+  right: -8px; /* Offset to sit outside item container */
+  bottom: 0;
+  width: 4px;
+  background-color: #f1f3f5;
+  border-radius: 2px;
+}
+
+.scroll-indicator .thumb {
+  height: 60px; /* arbitrary height to show the thumb */
+  background-color: #a0aec0;
+  border-radius: 2px;
+  margin-top: 10px; /* arbitrary position */
+}

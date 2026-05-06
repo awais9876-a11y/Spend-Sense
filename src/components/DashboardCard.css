@@ -1,0 +1,68 @@
+.dashboard-card {
+  background-color: #101828;
+  padding: 0 24px 30px 24px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.total-balance-label {
+  color: #7f8fa4;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.total-balance-value {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.summary-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.summary-item {
+  flex: 1;
+  background-color: #1e2537;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.summary-label {
+  color: #7f8fa4;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.trend-icon {
+  font-size: 1rem;
+}
+
+.income .trend-icon {
+  color: #10b981;
+}
+.expense .trend-icon {
+  color: #ef4444;
+}
+
+.summary-value {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.income-value {
+  color: #10b981;
+}
+
+.expense-value {
+  color: #ef4444;
+}
